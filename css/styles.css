@@ -4,7 +4,6 @@
   --main-text-color: #757575;
   --second-text-color: #ffffff;
   --accent-text-color: #2196f3;
-  --main-section-background-color: #ffffff;
   --second-section-background-color: #f5f4fa;
   --accent-section-background-color: #2f303a;
   --main-btn-color: #ffffff;
@@ -16,7 +15,7 @@
 body {
   font-family: Roboto, sans-serif;
   color: #757575;
-  background-color: #e5e5e5;
+  background-color: #ffffff;
 }
 
 .list {
@@ -26,9 +25,6 @@ body {
 .link {
   text-decoration: none;
 }
-.cursor {
-  cursor: pointer;
-}
 
 /*------------Header styles------------------*/
 
@@ -36,9 +32,6 @@ body {
   color: var(--accent-text-color);
 }
 
-.header {
-  background-color: var(--main-section-background-color);
-}
 .header-logo {
   font-family: Raleway;
   font-weight: 700;
@@ -74,7 +67,9 @@ body {
 }
 
 .contact-link:hover,
-:focus {
+.contact-link:focus,
+.header-link:hover,
+.header-link:focus {
   color: var(--accent-text-color);
 }
 
@@ -102,13 +97,10 @@ body {
   line-height: 1.87;
   letter-spacing: 0.06em;
   color: var(--main-btn-color);
+  cursor: pointer;
 }
 
 /*------------Advantages styles ------------------*/
-
-.advantages {
-  background-color: var(--main-section-background-color);
-}
 
 .advantages-section-title,
 .services-section-title,
@@ -123,20 +115,17 @@ body {
 
 .advantages-title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 14px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   color: var(--main-title-color);
+  text-transform: uppercase;
 }
 
 .advantages-description {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-}
-
-.services {
-  background-color: var(--main-section-background-color);
 }
 
 /*------------Team styles------------------*/
@@ -191,17 +180,13 @@ body {
 }
 
 .mail-link:hover,
-:focus,
+.mail-link:focus,
 .tel-link:hover,
-:focus {
+.tel-link:focus {
   color: var(--second-text-color);
 }
 
 /*------------Portfolio page styles------------------*/
-
-.portfolio {
-  background-color: var(--main-section-background-color);
-}
 
 .portfolio-section-title {
   font-weight: 700;
@@ -219,10 +204,11 @@ body {
   line-height: 1.62;
   letter-spacing: 0.03em;
   color: var(--second-btn-color);
+  cursor: pointer;
 }
 
 .portfolio-nav-btn:hover,
-:focus {
+.portfolio-nav-btn:focus {
   background-color: var(--main-btn-background-color);
   color: var(--main-btn-color);
 }
